@@ -25,7 +25,7 @@ public class Step_defination extends Greencart_Home{
 	@Given ("^I should see Greencart homepage$")
 	public void Greencart_HomePage()
 	{
-		
+		System.out.println("GIT1_updat");
 	}
 	
 	@And ("^I should see vegitable with name (.+)")
@@ -36,7 +36,7 @@ public class Step_defination extends Greencart_Home{
 	@Then("^I click on (.+) button$")
 	public void click_button(String strArg1) throws Throwable 
 	{
-		
+		System.out.println("GIT2_eupdate");
 	}
 
 	@And("^I add count of vegitables$")
