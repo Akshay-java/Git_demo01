@@ -1,0 +1,468 @@
+[
+  {
+    "line": 1,
+    "elements": [
+      {
+        "line": 3,
+        "name": "",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 6396000000,
+              "status": "passed"
+            },
+            "line": 4,
+            "name": "Chrome browser should be launched",
+            "match": {
+              "location": "Step_definations.Step_defination.Chome_launch()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 20172000000,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "Greencart Website should be opened",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Greencart",
+                  "offset": 0
+                }
+              ],
+              "location": "Step_definations.Step_defination.launch_weblink(java.lang.String)"
+            },
+            "keyword": "And "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2021-04-22T18:14:32.588Z",
+        "line": 14,
+        "name": ": Validate the Search field",
+        "description": "",
+        "id": "greencart;:-validate-the-search-field;;2",
+        "after": [
+          {
+            "result": {
+              "duration": 1222000000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Step_definations.Hooks.after()"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "I should see Greencart homepage",
+            "match": {
+              "location": "Step_definations.Step_defination.Greencart_HomePage()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 2331000000,
+              "status": "passed"
+            },
+            "line": 10,
+            "name": "I enter Brocolli in search box",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Brocolli",
+                  "offset": 8
+                }
+              ],
+              "location": "Step_definations.Step_defination.i_enter_in_search_box(java.lang.String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 1252000000,
+              "status": "passed"
+            },
+            "line": 11,
+            "name": "I should see vegitable with name Brocolli",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Brocolli",
+                  "offset": 33
+                }
+              ],
+              "location": "Step_definations.Step_defination.vegitable_visible(java.lang.String)"
+            },
+            "keyword": "And "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@GreencartTesting1"
+          }
+        ]
+      },
+      {
+        "line": 3,
+        "name": "",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 3902000000,
+              "status": "passed"
+            },
+            "line": 4,
+            "name": "Chrome browser should be launched",
+            "match": {
+              "location": "Step_definations.Step_defination.Chome_launch()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 9981000000,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "Greencart Website should be opened",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Greencart",
+                  "offset": 0
+                }
+              ],
+              "location": "Step_definations.Step_defination.launch_weblink(java.lang.String)"
+            },
+            "keyword": "And "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2021-04-22T18:15:04.150Z",
+        "line": 15,
+        "name": ": Validate the Search field",
+        "description": "",
+        "id": "greencart;:-validate-the-search-field;;3",
+        "after": [
+          {
+            "result": {
+              "duration": 1089000000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Step_definations.Hooks.after()"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 1000000,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "I should see Greencart homepage",
+            "match": {
+              "location": "Step_definations.Step_defination.Greencart_HomePage()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 2469000000,
+              "status": "passed"
+            },
+            "line": 10,
+            "name": "I enter Cucumber in search box",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Cucumber",
+                  "offset": 8
+                }
+              ],
+              "location": "Step_definations.Step_defination.i_enter_in_search_box(java.lang.String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 1127000000,
+              "status": "passed"
+            },
+            "line": 11,
+            "name": "I should see vegitable with name Cucumber",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Cucumber",
+                  "offset": 33
+                }
+              ],
+              "location": "Step_definations.Step_defination.vegitable_visible(java.lang.String)"
+            },
+            "keyword": "And "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@GreencartTesting1"
+          }
+        ]
+      },
+      {
+        "line": 3,
+        "name": "",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 3916000000,
+              "status": "passed"
+            },
+            "line": 4,
+            "name": "Chrome browser should be launched",
+            "match": {
+              "location": "Step_definations.Step_defination.Chome_launch()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 22916000000,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "Greencart Website should be opened",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Greencart",
+                  "offset": 0
+                }
+              ],
+              "location": "Step_definations.Step_defination.launch_weblink(java.lang.String)"
+            },
+            "keyword": "And "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2021-04-22T18:15:22.730Z",
+        "line": 16,
+        "name": ": Validate the Search field",
+        "description": "",
+        "id": "greencart;:-validate-the-search-field;;4",
+        "after": [
+          {
+            "result": {
+              "duration": 1183000000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Step_definations.Hooks.after()"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 2000000,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "I should see Greencart homepage",
+            "match": {
+              "location": "Step_definations.Step_defination.Greencart_HomePage()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 2308000000,
+              "status": "passed"
+            },
+            "line": 10,
+            "name": "I enter Beans in search box",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Beans",
+                  "offset": 8
+                }
+              ],
+              "location": "Step_definations.Step_defination.i_enter_in_search_box(java.lang.String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 1169000000,
+              "status": "passed"
+            },
+            "line": 11,
+            "name": "I should see vegitable with name Beans",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Beans",
+                  "offset": 33
+                }
+              ],
+              "location": "Step_definations.Step_defination.vegitable_visible(java.lang.String)"
+            },
+            "keyword": "And "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@GreencartTesting1"
+          }
+        ]
+      },
+      {
+        "line": 3,
+        "name": "",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 5242000000,
+              "status": "passed"
+            },
+            "line": 4,
+            "name": "Chrome browser should be launched",
+            "match": {
+              "location": "Step_definations.Step_defination.Chome_launch()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 24732000000,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "Greencart Website should be opened",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Greencart",
+                  "offset": 0
+                }
+              ],
+              "location": "Step_definations.Step_defination.launch_weblink(java.lang.String)"
+            },
+            "keyword": "And "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2021-04-22T18:15:54.240Z",
+        "line": 17,
+        "name": ": Validate the Search field",
+        "description": "",
+        "id": "greencart;:-validate-the-search-field;;5",
+        "after": [
+          {
+            "result": {
+              "duration": 890000000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Step_definations.Hooks.after()"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 1000000,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "I should see Greencart homepage",
+            "match": {
+              "location": "Step_definations.Step_defination.Greencart_HomePage()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 2439000000,
+              "status": "passed"
+            },
+            "line": 10,
+            "name": "I enter Potato in search box",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Potato",
+                  "offset": 8
+                }
+              ],
+              "location": "Step_definations.Step_defination.i_enter_in_search_box(java.lang.String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 1124000000,
+              "status": "passed"
+            },
+            "line": 11,
+            "name": "I should see vegitable with name Potato",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Potato",
+                  "offset": 33
+                }
+              ],
+              "location": "Step_definations.Step_defination.vegitable_visible(java.lang.String)"
+            },
+            "keyword": "And "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@GreencartTesting1"
+          }
+        ]
+      }
+    ],
+    "name": "Greencart",
+    "description": "",
+    "id": "greencart",
+    "keyword": "Feature",
+    "uri": "file:src/test/java/Features/Greencart.feature",
+    "tags": []
+  }
+]

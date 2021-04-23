@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>Cucumber</title>
+	<meta content="text/html;charset=utf-8" http-equiv="Content-Type">
+	<link rel="icon" href="data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20class%3D%22ml-3%20ml-md-0%22%20viewBox%3D%220%200%2040.59%2046.31%22%20width%3D%2240.59%22%20height%3D%2246.31%22%3E%0A%20%20%20%20%3Cg%3E%0A%20%20%20%20%20%20%20%20%3Cpath%20fill%3D%22%2323d96c%22%20fill-rule%3D%22evenodd%22%20d%3D%22M30.283%203.645q-.528-.317-1.08-.593a16.164%2016.164%200%2000-1.154-.518c-.124-.052-.247-.1-.372-.149-.343-.127-.689-.268-1.042-.371a19.427%2019.427%200%2010-9.792%2037.51v5.56c11.676-1.753%2022.016-10.979%2022.787-23.093.459-7.289-3.193-14.73-9.347-18.346z%22%2F%3E%0A%20%20%20%20%20%20%20%20%3Cpath%20fill%3D%22%23173647%22%20d%3D%22M15.787%2046.307v-5.935A20.472%2020.472%200%201126.959%201.015c.274.08.557.187.832.291l.248.093c.165.064.291.113.417.167.348.137.739.313%201.208.543q.589.295%201.153.633c6.393%203.756%2010.354%2011.518%209.857%2019.316-.763%2012-10.722%2022.122-23.679%2024.067zm4.8-44.214h-.026a18.366%2018.366%200%2000-3.524%2036.408l.85.165v5.18c11.392-2.224%2020.009-11.272%2020.686-21.922.448-7.033-3.1-14.018-8.83-17.383l-.008-.005A14.691%2014.691%200%200027.654%203.5a5.74%205.74%200%2000-.344-.138l-.27-.1a9.49%209.49%200%2000-.708-.249%2018.425%2018.425%200%2000-5.743-.92z%22%2F%3E%0A%20%20%20%20%20%20%20%20%3Cpath%20fill%3D%22%23173647%22%20fill-rule%3D%22evenodd%22%20d%3D%22M16.666%2010.58a1.8%201.8%200%20011.583.608%204.184%204.184%200%2001.728%201.107c.645%201.422%201.027%203.461.23%204.605a6.334%206.334%200%2001-3.981-3.087%203.236%203.236%200%2001-.347-1.339%201.957%201.957%200%20011.787-1.894zm-5.683%208.025a7.742%207.742%200%20001.218.737%205.789%205.789%200%20004.883-.138%206.116%206.116%200%2000-3.345-3.45%203.664%203.664%200%2000-1.442-.321%201.884%201.884%200%2000-.319%200%201.766%201.766%200%2000-.995%203.172zm6.1%203.433c-.777-.518-2.379-.309-3.312-.292a4.416%204.416%200%2000-1.666.352%203.5%203.5%200%2000-1.218.738%201.817%201.817%200%20001.409%203.171%203.3%203.3%200%20001.442-.321c1.436-.62%203.141-2.32%203.346-3.648zm2.61%202a6.556%206.556%200%2000-3.724%203.506%203.091%203.091%200%2000-.321%201.314%201.907%201.907%200%20003.3%201.346%207.422%207.422%200%2000.7-1.218c.621-1.333.866-3.72.046-4.948zm2.557-7.167a5.941%205.941%200%20003.7-3.167%203.243%203.243%200%2000.319-1.346%201.915%201.915%200%2000-1.794-1.954%201.832%201.832%200%2000-1.6.641%207.382%207.382%200%2000-.705%201.218c-.62%201.434-.842%203.48.081%204.603zm4.208%2012.115a3.244%203.244%200%2000-.321-1.345%205.869%205.869%200%2000-3.554-3.269%205.386%205.386%200%2000-.226%204.711%204.147%204.147%200%2000.7%201.121c1.133%201.23%203.505.32%203.402-1.218zm4.2-6.28a7.466%207.466%200%2000-1.217-.7%204.425%204.425%200%2000-1.666-.352%206.4%206.4%200%2000-3.188.555%205.959%205.959%200%20003.316%203.386%203.672%203.672%200%20001.442.32%201.8%201.8%200%20001.31-3.209z%22%2F%3E%0A%20%20%20%20%3C%2Fg%3E%0A%3C%2Fsvg%3E">
+	<style>
+.cucumber-react .cucumber-status--passed {
+  color: #2CB14A;
+}
+.cucumber-react .cucumber-status--skipped {
+  color: #00A0CC;
+}
+.cucumber-react .cucumber-status--pending {
+  color: #FFAD33;
+}
+.cucumber-react .cucumber-status--undefined {
+  color: #FFAD33;
+}
+.cucumber-react .cucumber-status--ambiguous {
+  color: #F4EBFD;
+}
+.cucumber-react .cucumber-status--failed {
+  color: #BB0000;
+}
+.cucumber-react .cucumber-status--unknown {
+  color: #B6BECB;
+}
+.cucumber-react h1, .cucumber-react h2, .cucumber-react h3 {
+  padding: 0;
+  margin: 0;
+}
+.cucumber-react a {
+  color: inherit;
+}
+.cucumber-react .gherkin-document-list {
+  font: 14px "Open Sans", sans-serif;
+  color: #161C24;
+  background: #fff;
+  overflow-x: hidden;
+}
+.cucumber-react .cucumber-title {
+  margin-top: 0.3em;
+  margin-bottom: 0;
+  display: inline-block;
+}
+.cucumber-react .cucumber-title__keyword {
+  font-weight: bold;
+}
+.cucumber-react .cucumber-title__text {
+  font-weight: normal;
+}
+.cucumber-react .cucumber-tags {
+  padding: 0;
+  margin-bottom: 0;
+}
+.cucumber-react .cucumber-tags .cucumber-tag {
+  display: inline;
+  list-style-type: none;
+  padding: 4px 8px 4px 8px;
+  margin-right: 6px;
+  background-color: #FFFFFF;
+  border-radius: 6px;
+}
+.cucumber-react .cucumber-feature__icon {
+  padding-top: 0.35em;
+  padding-right: 0.5em;
+}
+.cucumber-react .cucumber-description,
+.cucumber-react .cucumber-children {
+  margin-left: 1em;
+}
+.cucumber-react .cucumber-feature,
+.cucumber-react .cucumber-rule,
+.cucumber-react .cucumber-scenario,
+.cucumber-react .cucumber-background {
+  margin-bottom: 1em;
+}
+.cucumber-react .cucumber-steps {
+  list-style-type: none;
+  padding-left: 10px;
+}
+.cucumber-react .cucumber-steps .cucumber-step {
+  display: flex;
+}
+.cucumber-react .cucumber-steps .cucumber-step__status {
+  padding-top: 0.2em;
+  padding-right: 0.5em;
+}
+.cucumber-react .cucumber-steps .cucumber-step__content {
+  flex-grow: 1;
+  max-width: calc(100% - 1.5em);
+}
+.cucumber-react .cucumber-steps .cucumber-step__keyword {
+  font-weight: bold;
+}
+.cucumber-react .cucumber-steps .cucumber-step__text {
+  font-weight: normal;
+}
+.cucumber-react .cucumber-steps .cucumber-step__param {
+  font-weight: normal;
+  font-style: italic;
+}
+.cucumber-react .cucumber-table {
+  border-collapse: collapse;
+  margin-top: 0.5em;
+  margin-bottom: 0.5em;
+}
+.cucumber-react .cucumber-table__header-cell {
+  border: 1px solid #4B5662;
+  padding: 0.3em;
+}
+.cucumber-react .cucumber-table__cell {
+  border: 1px solid #4B5662;
+  padding: 0.3em;
+}
+.cucumber-react .cucumber-table__cell__status {
+  padding: 0.5em 3px 3px 3px;
+}
+.cucumber-react .cucumber-table__cell__step {
+  flex-grow: 1;
+}
+.cucumber-react .cucumber-code {
+  padding: 0.25em;
+  background-color: #ebebeb;
+}
+.cucumber-react .cucumber-error {
+  padding: 0.5em;
+  margin: 0;
+  overflow-x: auto;
+}
+.cucumber-react .cucumber-no-documents {
+  font: 14px "Open Sans", sans-serif;
+}
+.cucumber-react .cucumber-attachment__icon {
+  margin-right: 0.5em;
+}
+.cucumber-react .cucumber-attachment__image {
+  max-width: 100%;
+  margin-top: 1em;
+}
+.cucumber-react .cucumber-attachment__text {
+  background-color: #ebebeb;
+  padding: 0.5em;
+  overflow-x: auto;
+}
+.cucumber-react .cucumber-anchor {
+  position: relative;
+  display: flex;
+  align-items: center;
+  margin-top: 0.3em;
+}
+.cucumber-react .cucumber-anchor__link {
+  opacity: 0;
+  transition: all 0.35s ease-in-out;
+  position: absolute;
+  left: -20px;
+  display: flex;
+  align-items: center;
+}
+.cucumber-react .cucumber-anchor__icon {
+  margin-right: 0.5em;
+}
+.cucumber-react .cucumber-anchor:hover a {
+  opacity: 1;
+  width: max-content;
+  transition: all 0.35s ease-in-out;
+}
+.cucumber-react .cucumber-anchor > * {
+  height: 100%;
+  margin-top: 0px;
+}
+
+.cucumber-report-header {
+  width: 100%;
+  display: grid;
+  grid-template-columns: 1fr;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  font: 11px "Open Sans", sans-serif;
+  margin-bottom: 1em;
+}
+.cucumber-report-header > * {
+  padding: 1em;
+}
+.cucumber-report-header .cucumber-status-filter {
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+}
+.cucumber-report-header .cucumber-status-filter table {
+  width: 100%;
+}
+.cucumber-report-header .cucumber-execution-data {
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+}
+.cucumber-report-header .cucumber-search-bar {
+  border-right: 0;
+}
+.cucumber-report-header .cucumber-search-bar form.cucumber-search-bar-search {
+  width: 100%;
+  display: grid;
+  grid-template-columns: 9fr 1fr;
+}
+.cucumber-report-header .cucumber-search-bar form.cucumber-search-bar-search input {
+  padding: 0.4em;
+  border-radius: 0;
+}
+.cucumber-report-header .cucumber-search-bar form.cucumber-search-bar-search button {
+  height: 2.2em;
+  padding-left: 0.6em;
+  padding-right: 0.6em;
+}
+.cucumber-report-header .cucumber-search-bar p.help {
+  font-size: 80%;
+}
+.cucumber-report-header .cucumber-search-bar form.cucumber-search-bar-filter ul {
+  display: inline;
+}
+.cucumber-report-header .cucumber-search-bar form.cucumber-search-bar-filter ul li {
+  list-style-type: none;
+  display: inline-block;
+}
+.cucumber-report-header .cucumber-search-bar form.cucumber-search-bar-filter ul li input {
+  display: inline-block;
+  width: auto;
+  height: 0.6em;
+}
+.cucumber-report-header .cucumber-search-bar form.cucumber-search-bar-filter ul li label {
+  padding-right: 1em;
+}
+
+@media only screen and (min-width: 600px) {
+  .cucumber-report-header {
+    grid-template-columns: 1fr 1fr;
+  }
+  .cucumber-report-header .cucumber-status-filter {
+    border-right: 1px solid rgba(0, 0, 0, 0.1);
+  }
+  .cucumber-report-header .cucumber-search-bar {
+    grid-column: 1/-1;
+  }
+}
+@media only screen and (min-width: 992px) {
+  .cucumber-report-header {
+    grid-template-columns: 1fr 1fr 2fr;
+  }
+  .cucumber-report-header .cucumber-status-filter {
+    border-bottom: 0;
+  }
+  .cucumber-report-header .cucumber-execution-data {
+    border-right: 1px solid rgba(0, 0, 0, 0.1);
+    border-bottom: 0;
+  }
+  .cucumber-report-header .cucumber-search-bar {
+    grid-column: auto;
+  }
+}
+.accordion {
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    border-radius: 2px;
+}
+
+.accordion__item + .accordion__item {
+    border-top: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.accordion__button {
+    background-color: #f4f4f4;
+    color: #444;
+    cursor: pointer;
+    padding: 10px;
+    width: 100%;
+    text-align: left;
+    border: none;
+}
+
+.accordion__button:hover {
+    background-color: #ddd;
+}
+
+.accordion__button:before {
+    display: inline-block;
+    content: '';
+    height: 10px;
+    width: 10px;
+    margin-right: 12px;
+    border-bottom: 2px solid currentColor;
+    border-right: 2px solid currentColor;
+    transform: rotate(-45deg);
+}
+
+.accordion__button[aria-expanded='true']::before,
+.accordion__button[aria-selected='true']::before {
+    transform: rotate(45deg);
+}
+
+.accordion__panel {
+    padding: 20px;
+    animation: fadein 0.35s ease-in;
+}
+
+	</style>
+</head>
+<body>
+<div id="content">
+</div>
+<script>
+window.CUCUMBER_MESSAGES = [{"meta":{"protocolVersion":"15.0.0","implementation":{"name":"cucumber-jvm","version":"6.10.3"},"runtime":{"name":"Java HotSpot(TM) 64-Bit Server VM","version":"25.291-b10"},"os":{"name":"Windows 10"},"cpu":{"name":"amd64"}}},{"testRunStarted":{"timestamp":{"seconds":"1619097018","nanos":258000000}}},{"source":{"uri":"file:///F:/Java/Live_PractiseProject_01/src/test/java/Features/Greencart.feature","data":"Feature: Greencart\r\n\r\nBackground: \r\nGiven Chrome browser should be launched\r\nAnd Greencart Website should be opened\r\n\r\n@Testing\r\nScenario Outline:: Validate the Search field\r\nGiven I should see Greencart homepage\r\nWhen I enter \u003cVegitable_name\u003e in search box\r\nAnd I should see vegitable with name \u003cVegitable_name\u003e\r\nExamples:\r\n|Vegitable_name|\r\n|Brocoli|\r\n|Cucumber|\r\n|Beans|\r\n|Potato|\r\n\r\n@Testing\r\nScenario Outline:: Add vagitables in cart\r\nGiven I should see Greencart homepage\r\nWhen I enter \u003cVegitable_name\u003e in search box\r\nAnd I should see vegitable with name \u003cVegitable_name\u003e\r\nAnd I add count of vegitables\r\nAnd I click on \"Add_To_Cart\" button\r\nAnd I navigate to shopping cart\r\nAnd I click on \"PROCEED TO CHECKOUT\" button\r\nAnd I see \u003cVegitable_name\u003e vegitable in cart\r\nThen I click on \"Place Order\" button\r\n\r\nExamples:\r\n|Vegitable_name|\r\n|Cucumber|\r\n|Apple|\r\n|Brocoli|\r\n|Potato|\r\n|Corn|","mediaType":"text/x.cucumber.gherkin+plain"}},{"gherkinDocument":{"uri":"file:///F:/Java/Live_PractiseProject_01/src/test/java/Features/Greencart.feature","feature":{"location":{"line":1,"column":1},"language":"en","keyword":"Feature","name":"Greencart","children":[{"background":{"location":{"line":3,"column":1},"keyword":"Background","steps":[{"location":{"line":4,"column":1},"keyword":"Given ","text":"Chrome browser should be launched","id":"5523a8a4-143e-4afd-a31c-e8131fce1f46"},{"location":{"line":5,"column":1},"keyword":"And ","text":"Greencart Website should be opened","id":"b2ed1844-749b-4fe8-aad9-6c27d6e4d139"}],"id":"3d9b2ee3-f5fb-4f56-bb3b-16002b714ce6"}},{"scenario":{"location":{"line":8,"column":1},"tags":[{"location":{"line":7,"column":1},"name":"@Testing","id":"b0076c4d-ddd4-49f5-9fb5-15bb7712f62b"}],"keyword":"Scenario Outline","name":": Validate the Search field","steps":[{"location":{"line":9,"column":1},"keyword":"Given ","text":"I should see Greencart homepage","id":"f71726ee-8e62-442e-aa9a-156972881035"},{"location":{"line":10,"column":1},"keyword":"When ","text":"I enter \u003cVegitable_name\u003e in search box","id":"646e9f96-3eab-4859-9a75-3084637f5b98"},{"location":{"line":11,"column":1},"keyword":"And ","text":"I should see vegitable with name \u003cVegitable_name\u003e","id":"1fa44c68-b595-4e55-8e09-1deeb484e751"}],"examples":[{"location":{"line":12,"column":1},"keyword":"Examples","tableHeader":{"location":{"line":13,"column":1},"cells":[{"location":{"line":13,"column":2},"value":"Vegitable_name"}],"id":"c2b74bdf-2934-4789-8343-0d8bae3c6ae9"},"tableBody":[{"location":{"line":14,"column":1},"cells":[{"location":{"line":14,"column":2},"value":"Brocoli"}],"id":"db770341-a85c-4344-98f2-2f0d31776b1c"},{"location":{"line":15,"column":1},"cells":[{"location":{"line":15,"column":2},"value":"Cucumber"}],"id":"b2794b5b-7682-4b02-9746-bf1551348d52"},{"location":{"line":16,"column":1},"cells":[{"location":{"line":16,"column":2},"value":"Beans"}],"id":"017ac986-8188-4199-b19a-db4d2f96c4d9"},{"location":{"line":17,"column":1},"cells":[{"location":{"line":17,"column":2},"value":"Potato"}],"id":"5a542861-3918-4177-919a-03a3e2a61350"}],"id":"81b1c213-58b7-4190-b8ce-a6896a47053f"}],"id":"b53a7f36-deb9-4ab0-ad51-80ad682495e0"}},{"scenario":{"location":{"line":20,"column":1},"tags":[{"location":{"line":19,"column":1},"name":"@Testing","id":"37a7fd2a-22d1-448a-b7f6-325c2d3d9d66"}],"keyword":"Scenario Outline","name":": Add vagitables in cart","steps":[{"location":{"line":21,"column":1},"keyword":"Given ","text":"I should see Greencart homepage","id":"cedfb9c4-a467-4de3-a8e9-3dd2fcc61151"},{"location":{"line":22,"column":1},"keyword":"When ","text":"I enter \u003cVegitable_name\u003e in search box","id":"fb27cff7-e686-4e54-a513-7d0088f24dca"},{"location":{"line":23,"column":1},"keyword":"And ","text":"I should see vegitable with name \u003cVegitable_name\u003e","id":"57832585-c728-43fd-9ee1-9f17e65d02e9"},{"location":{"line":24,"column":1},"keyword":"And ","text":"I add count of vegitables","id":"573b6ed6-3c7f-42f5-bc7a-7ed7397f4eed"},{"location":{"line":25,"column":1},"keyword":"And ","text":"I click on \"Add_To_Cart\" button","id":"f10f43d4-da01-4afe-ac8b-3677b018cee9"},{"location":{"line":26,"column":1},"keyword":"And ","text":"I navigate to shopping cart","id":"c61f1dcc-aac4-4897-bb58-2c4b62d3459b"},{"location":{"line":27,"column":1},"keyword":"And ","text":"I click on \"PROCEED TO CHECKOUT\" button","id":"e1bed516-64e1-47a0-b303-d3940feeede7"},{"location":{"line":28,"column":1},"keyword":"And ","text":"I see \u003cVegitable_name\u003e vegitable in cart","id":"c2c5cf31-d6c0-4276-ba57-68ddf5e283ef"},{"location":{"line":29,"column":1},"keyword":"Then ","text":"I click on \"Place Order\" button","id":"9dd2ee7c-7a77-4f13-ade8-dc6e53450cf7"}],"examples":[{"location":{"line":31,"column":1},"keyword":"Examples","tableHeader":{"location":{"line":32,"column":1},"cells":[{"location":{"line":32,"column":2},"value":"Vegitable_name"}],"id":"497c1aeb-8b50-4931-8a52-184e46926dab"},"tableBody":[{"location":{"line":33,"column":1},"cells":[{"location":{"line":33,"column":2},"value":"Cucumber"}],"id":"d5a435f0-1da6-462f-ae3b-c16061175868"},{"location":{"line":34,"column":1},"cells":[{"location":{"line":34,"column":2},"value":"Apple"}],"id":"c76bd37f-a21b-4975-9c72-7de9813724e3"},{"location":{"line":35,"column":1},"cells":[{"location":{"line":35,"column":2},"value":"Brocoli"}],"id":"ce23ff4f-dcfd-4c5e-bf54-4c8a0f84abb4"},{"location":{"line":36,"column":1},"cells":[{"location":{"line":36,"column":2},"value":"Potato"}],"id":"a8518b27-6b10-4fd1-84ee-5994fbd924d2"},{"location":{"line":37,"column":1},"cells":[{"location":{"line":37,"column":2},"value":"Corn"}],"id":"91fd43cc-2b61-4d33-943b-c9da96138a23"}],"id":"0f6adb92-c9e3-412d-ac72-b3cc6426180d"}],"id":"fee0e6e5-1e43-43fb-8ab1-ae3eb585a1ed"}}]}}},{"pickle":{"id":"8fca26d6-c1b5-4bc0-9b46-cf209069a26a","uri":"file:///F:/Java/Live_PractiseProject_01/src/test/java/Features/Greencart.feature","name":": Validate the Search field","language":"en","steps":[{"text":"Chrome browser should be launched","id":"6e7d414f-4887-4149-8dbb-946a273e1283","astNodeIds":["5523a8a4-143e-4afd-a31c-e8131fce1f46"]},{"text":"Greencart Website should be opened","id":"a08698d2-71ef-47c5-9622-aa78a94dc4e3","astNodeIds":["b2ed1844-749b-4fe8-aad9-6c27d6e4d139"]},{"text":"I should see Greencart homepage","id":"fda0f0ae-8770-453b-a932-2755c9c4a434","astNodeIds":["f71726ee-8e62-442e-aa9a-156972881035","db770341-a85c-4344-98f2-2f0d31776b1c"]},{"text":"I enter Brocoli in search box","id":"9374ddca-839e-4605-afdf-a383de0f0794","astNodeIds":["646e9f96-3eab-4859-9a75-3084637f5b98","db770341-a85c-4344-98f2-2f0d31776b1c"]},{"text":"I should see vegitable with name Brocoli","id":"38e04dfb-ceb9-48c1-97a3-46451b2ccc58","astNodeIds":["1fa44c68-b595-4e55-8e09-1deeb484e751","db770341-a85c-4344-98f2-2f0d31776b1c"]}],"tags":[{"name":"@Testing","astNodeId":"b0076c4d-ddd4-49f5-9fb5-15bb7712f62b"}],"astNodeIds":["b53a7f36-deb9-4ab0-ad51-80ad682495e0","db770341-a85c-4344-98f2-2f0d31776b1c"]}},{"pickle":{"id":"73ed685a-9418-46a9-86a1-095427f01630","uri":"file:///F:/Java/Live_PractiseProject_01/src/test/java/Features/Greencart.feature","name":": Validate the Search field","language":"en","steps":[{"text":"Chrome browser should be launched","id":"398373e2-18f5-4fb4-82ec-c2d9a7efda3e","astNodeIds":["5523a8a4-143e-4afd-a31c-e8131fce1f46"]},{"text":"Greencart Website should be opened","id":"1505f9a6-7ed7-4131-84f7-348e99306f43","astNodeIds":["b2ed1844-749b-4fe8-aad9-6c27d6e4d139"]},{"text":"I should see Greencart homepage","id":"8aa84da4-0672-4b13-8ee9-5380c7476875","astNodeIds":["f71726ee-8e62-442e-aa9a-156972881035","b2794b5b-7682-4b02-9746-bf1551348d52"]},{"text":"I enter Cucumber in search box","id":"1c7f0329-1e83-4b5d-846d-850f41bb12bb","astNodeIds":["646e9f96-3eab-4859-9a75-3084637f5b98","b2794b5b-7682-4b02-9746-bf1551348d52"]},{"text":"I should see vegitable with name Cucumber","id":"c0eaa035-87e7-4cda-9e87-5b7f79a83158","astNodeIds":["1fa44c68-b595-4e55-8e09-1deeb484e751","b2794b5b-7682-4b02-9746-bf1551348d52"]}],"tags":[{"name":"@Testing","astNodeId":"b0076c4d-ddd4-49f5-9fb5-15bb7712f62b"}],"astNodeIds":["b53a7f36-deb9-4ab0-ad51-80ad682495e0","b2794b5b-7682-4b02-9746-bf1551348d52"]}},{"pickle":{"id":"ba2b533d-52af-47c7-9f3d-d6dfc796c63f","uri":"file:///F:/Java/Live_PractiseProject_01/src/test/java/Features/Greencart.feature","name":": Validate the Search field","language":"en","steps":[{"text":"Chrome browser should be launched","id":"a79a7208-17c3-4d6a-a16f-550379b6a2a2","astNodeIds":["5523a8a4-143e-4afd-a31c-e8131fce1f46"]},{"text":"Greencart Website should be opened","id":"d26e2ec4-2c27-45d8-a439-92f9608f99b8","astNodeIds":["b2ed1844-749b-4fe8-aad9-6c27d6e4d139"]},{"text":"I should see Greencart homepage","id":"d9a8b9a2-c9a7-49a1-9745-fb6c7d28c79f","astNodeIds":["f71726ee-8e62-442e-aa9a-156972881035","017ac986-8188-4199-b19a-db4d2f96c4d9"]},{"text":"I enter Beans in search box","id":"f418ffc2-d7cf-4b29-af99-1d7ba376d8f2","astNodeIds":["646e9f96-3eab-4859-9a75-3084637f5b98","017ac986-8188-4199-b19a-db4d2f96c4d9"]},{"text":"I should see vegitable with name Beans","id":"5331d265-0232-44ee-9b8e-32be7824d88b","astNodeIds":["1fa44c68-b595-4e55-8e09-1deeb484e751","017ac986-8188-4199-b19a-db4d2f96c4d9"]}],"tags":[{"name":"@Testing","astNodeId":"b0076c4d-ddd4-49f5-9fb5-15bb7712f62b"}],"astNodeIds":["b53a7f36-deb9-4ab0-ad51-80ad682495e0","017ac986-8188-4199-b19a-db4d2f96c4d9"]}},{"pickle":{"id":"23550443-d87b-491a-b30e-b1ceb533aaea","uri":"file:///F:/Java/Live_PractiseProject_01/src/test/java/Features/Greencart.feature","name":": Validate the Search field","language":"en","steps":[{"text":"Chrome browser should be launched","id":"114f254b-7c95-4df6-803e-54cb19dad30e","astNodeIds":["5523a8a4-143e-4afd-a31c-e8131fce1f46"]},{"text":"Greencart Website should be opened","id":"bfe166c1-ea1e-4a60-a689-0522ba8fc1fb","astNodeIds":["b2ed1844-749b-4fe8-aad9-6c27d6e4d139"]},{"text":"I should see Greencart homepage","id":"cdb8799f-4080-4d90-b870-2317c6addebe","astNodeIds":["f71726ee-8e62-442e-aa9a-156972881035","5a542861-3918-4177-919a-03a3e2a61350"]},{"text":"I enter Potato in search box","id":"b839824f-477a-4b0c-aa05-739f369f7bed","astNodeIds":["646e9f96-3eab-4859-9a75-3084637f5b98","5a542861-3918-4177-919a-03a3e2a61350"]},{"text":"I should see vegitable with name Potato","id":"a0191063-6dd0-4ea9-be1f-1a16a58c9bf2","astNodeIds":["1fa44c68-b595-4e55-8e09-1deeb484e751","5a542861-3918-4177-919a-03a3e2a61350"]}],"tags":[{"name":"@Testing","astNodeId":"b0076c4d-ddd4-49f5-9fb5-15bb7712f62b"}],"astNodeIds":["b53a7f36-deb9-4ab0-ad51-80ad682495e0","5a542861-3918-4177-919a-03a3e2a61350"]}},{"pickle":{"id":"ade84932-d47b-45a2-a151-6ca81317be3d","uri":"file:///F:/Java/Live_PractiseProject_01/src/test/java/Features/Greencart.feature","name":": Add vagitables in cart","language":"en","steps":[{"text":"Chrome browser should be launched","id":"1ffb4b4f-6d23-424e-9f35-d30a7ce867d1","astNodeIds":["5523a8a4-143e-4afd-a31c-e8131fce1f46"]},{"text":"Greencart Website should be opened","id":"bc32b0ee-c78f-4189-8726-4ca3e24a7aee","astNodeIds":["b2ed1844-749b-4fe8-aad9-6c27d6e4d139"]},{"text":"I should see Greencart homepage","id":"e2353425-3200-4d7c-89b0-49aaecc6b368","astNodeIds":["cedfb9c4-a467-4de3-a8e9-3dd2fcc61151","d5a435f0-1da6-462f-ae3b-c16061175868"]},{"text":"I enter Cucumber in search box","id":"adbb920c-2599-4c93-8eec-f8bb39ac1edb","astNodeIds":["fb27cff7-e686-4e54-a513-7d0088f24dca","d5a435f0-1da6-462f-ae3b-c16061175868"]},{"text":"I should see vegitable with name Cucumber","id":"66d845d4-4710-476e-a72e-ea209d65c723","astNodeIds":["57832585-c728-43fd-9ee1-9f17e65d02e9","d5a435f0-1da6-462f-ae3b-c16061175868"]},{"text":"I add count of vegitables","id":"feaf3de6-2d28-4058-a518-195ccd2106a8","astNodeIds":["573b6ed6-3c7f-42f5-bc7a-7ed7397f4eed","d5a435f0-1da6-462f-ae3b-c16061175868"]},{"text":"I click on \"Add_To_Cart\" button","id":"d79df72f-ff5d-4b2e-b73e-1412d4ff1fd8","astNodeIds":["f10f43d4-da01-4afe-ac8b-3677b018cee9","d5a435f0-1da6-462f-ae3b-c16061175868"]},{"text":"I navigate to shopping cart","id":"e66c7013-2c8c-4f63-9aec-b8510705b37e","astNodeIds":["c61f1dcc-aac4-4897-bb58-2c4b62d3459b","d5a435f0-1da6-462f-ae3b-c16061175868"]},{"text":"I click on \"PROCEED TO CHECKOUT\" button","id":"c36c62e3-a660-4ee6-89bc-b9a1d0202ffa","astNodeIds":["e1bed516-64e1-47a0-b303-d3940feeede7","d5a435f0-1da6-462f-ae3b-c16061175868"]},{"text":"I see Cucumber vegitable in cart","id":"2f8bad01-c1fc-4514-86b6-9251a6e13c3f","astNodeIds":["c2c5cf31-d6c0-4276-ba57-68ddf5e283ef","d5a435f0-1da6-462f-ae3b-c16061175868"]},{"text":"I click on \"Place Order\" button","id":"252901e6-37e6-422c-a8e3-47f2e99172e4","astNodeIds":["9dd2ee7c-7a77-4f13-ade8-dc6e53450cf7","d5a435f0-1da6-462f-ae3b-c16061175868"]}],"tags":[{"name":"@Testing","astNodeId":"37a7fd2a-22d1-448a-b7f6-325c2d3d9d66"}],"astNodeIds":["fee0e6e5-1e43-43fb-8ab1-ae3eb585a1ed","d5a435f0-1da6-462f-ae3b-c16061175868"]}},{"pickle":{"id":"4cd3f783-7e1e-42b6-b20f-a01e6ba0d8cf","uri":"file:///F:/Java/Live_PractiseProject_01/src/test/java/Features/Greencart.feature","name":": Add vagitables in cart","language":"en","steps":[{"text":"Chrome browser should be launched","id":"a0f9e24f-a294-4abe-8709-df494050e26e","astNodeIds":["5523a8a4-143e-4afd-a31c-e8131fce1f46"]},{"text":"Greencart Website should be opened","id":"1c7af499-d3ae-4a48-b7c7-8025665ea8e0","astNodeIds":["b2ed1844-749b-4fe8-aad9-6c27d6e4d139"]},{"text":"I should see Greencart homepage","id":"a9baca69-8ad4-4fff-b87a-64e8b002e1bb","astNodeIds":["cedfb9c4-a467-4de3-a8e9-3dd2fcc61151","c76bd37f-a21b-4975-9c72-7de9813724e3"]},{"text":"I enter Apple in search box","id":"89b129be-9eda-46f7-a0e0-bc028a771497","astNodeIds":["fb27cff7-e686-4e54-a513-7d0088f24dca","c76bd37f-a21b-4975-9c72-7de9813724e3"]},{"text":"I should see vegitable with name Apple","id":"58108ba7-d026-4327-a755-c0c48dc6a17e","astNodeIds":["57832585-c728-43fd-9ee1-9f17e65d02e9","c76bd37f-a21b-4975-9c72-7de9813724e3"]},{"text":"I add count of vegitables","id":"6cc5685b-f82d-4b1b-a09b-a66e3f9395f9","astNodeIds":["573b6ed6-3c7f-42f5-bc7a-7ed7397f4eed","c76bd37f-a21b-4975-9c72-7de9813724e3"]},{"text":"I click on \"Add_To_Cart\" button","id":"533f09f5-7918-450f-be4e-e9a2c587cf79","astNodeIds":["f10f43d4-da01-4afe-ac8b-3677b018cee9","c76bd37f-a21b-4975-9c72-7de9813724e3"]},{"text":"I navigate to shopping cart","id":"486d207b-e4fe-40ce-b0ee-812872e73100","astNodeIds":["c61f1dcc-aac4-4897-bb58-2c4b62d3459b","c76bd37f-a21b-4975-9c72-7de9813724e3"]},{"text":"I click on \"PROCEED TO CHECKOUT\" button","id":"3ae14559-4b2b-4893-a36c-18296f4ada73","astNodeIds":["e1bed516-64e1-47a0-b303-d3940feeede7","c76bd37f-a21b-4975-9c72-7de9813724e3"]},{"text":"I see Apple vegitable in cart","id":"e748ab6f-67bc-411a-9f03-c74531c24184","astNodeIds":["c2c5cf31-d6c0-4276-ba57-68ddf5e283ef","c76bd37f-a21b-4975-9c72-7de9813724e3"]},{"text":"I click on \"Place Order\" button","id":"e250cf8a-3e59-42fe-bc8c-9d525eeec278","astNodeIds":["9dd2ee7c-7a77-4f13-ade8-dc6e53450cf7","c76bd37f-a21b-4975-9c72-7de9813724e3"]}],"tags":[{"name":"@Testing","astNodeId":"37a7fd2a-22d1-448a-b7f6-325c2d3d9d66"}],"astNodeIds":["fee0e6e5-1e43-43fb-8ab1-ae3eb585a1ed","c76bd37f-a21b-4975-9c72-7de9813724e3"]}},{"pickle":{"id":"7c4ebc86-6f89-42fe-bc5f-6224b1e1dd24","uri":"file:///F:/Java/Live_PractiseProject_01/src/test/java/Features/Greencart.feature","name":": Add vagitables in cart","language":"en","steps":[{"text":"Chrome browser should be launched","id":"0a12ba43-0ef9-479b-810e-5604b06c3bed","astNodeIds":["5523a8a4-143e-4afd-a31c-e8131fce1f46"]},{"text":"Greencart Website should be opened","id":"823339b1-78af-4c0b-a929-39c704a2e3fc","astNodeIds":["b2ed1844-749b-4fe8-aad9-6c27d6e4d139"]},{"text":"I should see Greencart homepage","id":"948ccae2-493c-43e3-8e32-e9ded149ec29","astNodeIds":["cedfb9c4-a467-4de3-a8e9-3dd2fcc61151","ce23ff4f-dcfd-4c5e-bf54-4c8a0f84abb4"]},{"text":"I enter Brocoli in search box","id":"ef9d9058-d93a-496d-9e29-d8ddd693d5be","astNodeIds":["fb27cff7-e686-4e54-a513-7d0088f24dca","ce23ff4f-dcfd-4c5e-bf54-4c8a0f84abb4"]},{"text":"I should see vegitable with name Brocoli","id":"be9f3c69-572e-440a-8d28-21f1ab6c6a6b","astNodeIds":["57832585-c728-43fd-9ee1-9f17e65d02e9","ce23ff4f-dcfd-4c5e-bf54-4c8a0f84abb4"]},{"text":"I add count of vegitables","id":"522e88bd-34da-40a4-ab7a-eb85bdbd2c70","astNodeIds":["573b6ed6-3c7f-42f5-bc7a-7ed7397f4eed","ce23ff4f-dcfd-4c5e-bf54-4c8a0f84abb4"]},{"text":"I click on \"Add_To_Cart\" button","id":"cc3b2be5-6dc8-43ba-acd2-1b91ea8855b3","astNodeIds":["f10f43d4-da01-4afe-ac8b-3677b018cee9","ce23ff4f-dcfd-4c5e-bf54-4c8a0f84abb4"]},{"text":"I navigate to shopping cart","id":"2c017559-0664-4078-bbd4-0f65b459878e","astNodeIds":["c61f1dcc-aac4-4897-bb58-2c4b62d3459b","ce23ff4f-dcfd-4c5e-bf54-4c8a0f84abb4"]},{"text":"I click on \"PROCEED TO CHECKOUT\" button","id":"7cadd9fe-cc96-4463-9d8c-f1aa5c0a34e1","astNodeIds":["e1bed516-64e1-47a0-b303-d3940feeede7","ce23ff4f-dcfd-4c5e-bf54-4c8a0f84abb4"]},{"text":"I see Brocoli vegitable in cart","id":"f30a7919-3a3e-4058-bfd8-0d0008e713b0","astNodeIds":["c2c5cf31-d6c0-4276-ba57-68ddf5e283ef","ce23ff4f-dcfd-4c5e-bf54-4c8a0f84abb4"]},{"text":"I click on \"Place Order\" button","id":"ee480955-31c2-4745-98dd-f6047ab3e977","astNodeIds":["9dd2ee7c-7a77-4f13-ade8-dc6e53450cf7","ce23ff4f-dcfd-4c5e-bf54-4c8a0f84abb4"]}],"tags":[{"name":"@Testing","astNodeId":"37a7fd2a-22d1-448a-b7f6-325c2d3d9d66"}],"astNodeIds":["fee0e6e5-1e43-43fb-8ab1-ae3eb585a1ed","ce23ff4f-dcfd-4c5e-bf54-4c8a0f84abb4"]}},{"pickle":{"id":"91e2b61f-8210-40c0-be78-10d2e91743c1","uri":"file:///F:/Java/Live_PractiseProject_01/src/test/java/Features/Greencart.feature","name":": Add vagitables in cart","language":"en","steps":[{"text":"Chrome browser should be launched","id":"6bca2e45-d694-412d-a40a-857fe9170136","astNodeIds":["5523a8a4-143e-4afd-a31c-e8131fce1f46"]},{"text":"Greencart Website should be opened","id":"b75abef8-4b64-462c-ad00-fa7f4302b2a1","astNodeIds":["b2ed1844-749b-4fe8-aad9-6c27d6e4d139"]},{"text":"I should see Greencart homepage","id":"57871777-47d2-444a-accc-765c7a920b1a","astNodeIds":["cedfb9c4-a467-4de3-a8e9-3dd2fcc61151","a8518b27-6b10-4fd1-84ee-5994fbd924d2"]},{"text":"I enter Potato in search box","id":"2d3f5aab-933f-4df9-8a46-7f3a87819087","astNodeIds":["fb27cff7-e686-4e54-a513-7d0088f24dca","a8518b27-6b10-4fd1-84ee-5994fbd924d2"]},{"text":"I should see vegitable with name Potato","id":"6d3c0c9e-0398-4a79-a763-0c781d73f29b","astNodeIds":["57832585-c728-43fd-9ee1-9f17e65d02e9","a8518b27-6b10-4fd1-84ee-5994fbd924d2"]},{"text":"I add count of vegitables","id":"03376dfe-0d45-4bb7-be62-ad7656928a66","astNodeIds":["573b6ed6-3c7f-42f5-bc7a-7ed7397f4eed","a8518b27-6b10-4fd1-84ee-5994fbd924d2"]},{"text":"I click on \"Add_To_Cart\" button","id":"32ed0388-e255-4751-8fa5-073e0341ba14","astNodeIds":["f10f43d4-da01-4afe-ac8b-3677b018cee9","a8518b27-6b10-4fd1-84ee-5994fbd924d2"]},{"text":"I navigate to shopping cart","id":"939ada4f-9b64-49bb-8c4d-18c7d51d695e","astNodeIds":["c61f1dcc-aac4-4897-bb58-2c4b62d3459b","a8518b27-6b10-4fd1-84ee-5994fbd924d2"]},{"text":"I click on \"PROCEED TO CHECKOUT\" button","id":"e9aabef7-d4ff-499f-a41c-cb4fd3319ecf","astNodeIds":["e1bed516-64e1-47a0-b303-d3940feeede7","a8518b27-6b10-4fd1-84ee-5994fbd924d2"]},{"text":"I see Potato vegitable in cart","id":"69089a1a-96c5-4aa5-8a42-716bfff13731","astNodeIds":["c2c5cf31-d6c0-4276-ba57-68ddf5e283ef","a8518b27-6b10-4fd1-84ee-5994fbd924d2"]},{"text":"I click on \"Place Order\" button","id":"d914aacc-ea62-4743-89d2-e2890bc635d2","astNodeIds":["9dd2ee7c-7a77-4f13-ade8-dc6e53450cf7","a8518b27-6b10-4fd1-84ee-5994fbd924d2"]}],"tags":[{"name":"@Testing","astNodeId":"37a7fd2a-22d1-448a-b7f6-325c2d3d9d66"}],"astNodeIds":["fee0e6e5-1e43-43fb-8ab1-ae3eb585a1ed","a8518b27-6b10-4fd1-84ee-5994fbd924d2"]}},{"pickle":{"id":"4c670c9c-7603-44cf-b546-42491624fa5e","uri":"file:///F:/Java/Live_PractiseProject_01/src/test/java/Features/Greencart.feature","name":": Add vagitables in cart","language":"en","steps":[{"text":"Chrome browser should be launched","id":"f3fb0ee0-4993-4dfa-84a4-7937cee1c2be","astNodeIds":["5523a8a4-143e-4afd-a31c-e8131fce1f46"]},{"text":"Greencart Website should be opened","id":"d351dc21-5c22-440b-9cdb-0df61cd55654","astNodeIds":["b2ed1844-749b-4fe8-aad9-6c27d6e4d139"]},{"text":"I should see Greencart homepage","id":"4c3c9ae2-320a-4f36-a45e-d5f412feb766","astNodeIds":["cedfb9c4-a467-4de3-a8e9-3dd2fcc61151","91fd43cc-2b61-4d33-943b-c9da96138a23"]},{"text":"I enter Corn in search box","id":"66b790a7-9a89-453b-92a3-e4a69c8a726b","astNodeIds":["fb27cff7-e686-4e54-a513-7d0088f24dca","91fd43cc-2b61-4d33-943b-c9da96138a23"]},{"text":"I should see vegitable with name Corn","id":"438e9ac2-443e-46db-b005-6715d4491535","astNodeIds":["57832585-c728-43fd-9ee1-9f17e65d02e9","91fd43cc-2b61-4d33-943b-c9da96138a23"]},{"text":"I add count of vegitables","id":"085ee472-d27d-4274-b1fc-24f723bc6bf5","astNodeIds":["573b6ed6-3c7f-42f5-bc7a-7ed7397f4eed","91fd43cc-2b61-4d33-943b-c9da96138a23"]},{"text":"I click on \"Add_To_Cart\" button","id":"5d6f10a5-7732-44d3-9ef8-85b71626dc30","astNodeIds":["f10f43d4-da01-4afe-ac8b-3677b018cee9","91fd43cc-2b61-4d33-943b-c9da96138a23"]},{"text":"I navigate to shopping cart","id":"93c8cf19-64f7-423f-a88b-c0ccd30032c6","astNodeIds":["c61f1dcc-aac4-4897-bb58-2c4b62d3459b","91fd43cc-2b61-4d33-943b-c9da96138a23"]},{"text":"I click on \"PROCEED TO CHECKOUT\" button","id":"2eba8ec9-4dcf-41ae-bad7-6bb4e774589b","astNodeIds":["e1bed516-64e1-47a0-b303-d3940feeede7","91fd43cc-2b61-4d33-943b-c9da96138a23"]},{"text":"I see Corn vegitable in cart","id":"bc3dc7cd-ff2d-4008-9ca7-dd455fb74db7","astNodeIds":["c2c5cf31-d6c0-4276-ba57-68ddf5e283ef","91fd43cc-2b61-4d33-943b-c9da96138a23"]},{"text":"I click on \"Place Order\" button","id":"d8af6987-a843-4506-b235-fb3464f96c64","astNodeIds":["9dd2ee7c-7a77-4f13-ade8-dc6e53450cf7","91fd43cc-2b61-4d33-943b-c9da96138a23"]}],"tags":[{"name":"@Testing","astNodeId":"37a7fd2a-22d1-448a-b7f6-325c2d3d9d66"}],"astNodeIds":["fee0e6e5-1e43-43fb-8ab1-ae3eb585a1ed","91fd43cc-2b61-4d33-943b-c9da96138a23"]}},{"testCase":{"id":"d253e4d1-a11d-4d16-82b9-0e095a07b851","pickleId":"8fca26d6-c1b5-4bc0-9b46-cf209069a26a","testSteps":[{"id":"38229128-6f2b-413d-9838-1d246155b67d","pickle
