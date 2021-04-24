@@ -32,6 +32,8 @@ public class Step_defination extends Greencart_Home{
 		System.out.println("GIT1_updat");
 		System.out.println("GIT1_updat");
 		
+		System.out.println("GIT_develp");
+		System.out.println("GIT_develp");
 	}
 	
 	@And ("^I should see vegitable with name (.+)")
